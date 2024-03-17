@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lilita+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    background-color: plum;
+    padding: 0%;
+    margin: 0%;
+    font-family: bold;
+    font-weight: 300;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: bold;
+    src: url(./Fonts/GreatVibes-Regular.ttf);
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar,
+.barr {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+
+/* Styles for Laptop */
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    color: plum;
+}
+
+.bar:hover {
+    background-color: rgb(156, 66, 240);
+    color: azure;
+}
+
+.navb {
+    display: none;
+}
+
+
+/* Media Query Laptop */
+
+@media screen and (max-width: 1024px) {
+    .navb {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .bar {
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .barr:first-child {
+        border-top: none;
+    }
+
+    .bar:hover {
+        background-color: rgb(156, 66, 240);
+        color: azure;
+    }
+}
+
+
+/* Media Query Tablet */
+
+@media screen and (max-width: 768px) {
+    .navb {
+        display: none;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .bar {
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .barr:first-child {
+        border-top: none;
+    }
+
+    .bar:hover {
+        background-color: rgb(156, 66, 240);
+        color: azure;
+    }
+}
+
+
+/* Media Query Mobile */
+
+@media screen and (max-width: 425px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .navb {
+        background-color: #fff;
+        color: blueviolet;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .barr {
+        justify-content: center;
+    }
+
+    .barr {
+        border-top: #555;
+    }
+
+    .barr:hover {
+        background-color: rgb(156, 66, 240);
+        color: azure;
+    }
+}
